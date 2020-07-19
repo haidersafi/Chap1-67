@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   <link rel="stylesheet" href="./index.css">
+<style>
+  #more{
+    display: none;
+  }
+</style>
+
+<script src="./index.js"></script>//chap1 task7//
+
+
+  
+    
+</script>
+<script>
+  /*chapter2 Task 8*/
+ document.write("YAH ! I can write HTML content through javascript <br>");
+ 
+  /*chapter3 TASK3*/
+var birthyear=1993;
+document.write("<br> my birth year is "+birthyear+"<br> Data type of my declared variable is number<br>");
+</script>
+  </head>
+<body id="body">
+  <script>
+    /*chapter1 Task 6*/
+    alert("JS alerts from html file");
+    
+</script>
+    <a onclick="func()" href="">chapter 43-48 task1</a>
+    <h1 style="color: lightskyblue;">Mobile Lookup</h1>
+    <div >
+        <img onclick="phone()" src="https://www.91-img.com/pictures/121008-v1-apple-iphone-x-mobile-phone-large-1.jpg" alt="" height="200px" width="200px">
+        <img onclick="phone()" src="https://www.91-img.com/pictures/121008-v1-apple-iphone-x-mobile-phone-large-1.jpg" alt="" height="200px" width="200px">
+        <img onclick="phone()" src="https://www.91-img.com/pictures/121008-v1-apple-iphone-x-mobile-phone-large-1.jpg" alt="" height="200px" width="200px">
+        <img onclick="phone()" src="https://www.91-img.com/pictures/121008-v1-apple-iphone-x-mobile-phone-large-1.jpg" alt="" height="200px" width="200px">
+    </div>
+
+    <script>
+      function phone(){
+    alert("Thanks for purchasing the phone with us");
+}
+    </script>
+
+    <table id="myTable">
+        <tr><td><b>Index</b></td><td><b>Name</b></td><td><b>Class</b></td></tr>
+        <tr>
+          <td>0</td><td>John</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td><td>Doe</td><td>9</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td><td>Rob</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td><td>Van</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td><td>Dam</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td><td>Stone</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td><td>Cold</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td><td>Steve</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td><td>Austin</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td><td>Rock</td><td>10</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+      </table>
+    <img height="200px" width="200px" onmouseover="over(this)" onmouseout="out(this)" src="https://tse2.mm.bing.net/th?id=OIP.QQFZO_M6PszgbmK4griaFwAAAA&pid=Api&P=0&w=250&h=167" alt="">
+    <script type="text/javascript">
+ 
+ function over(x){
+      x.src="https://tse2.explicit.bing.net/th?id=OIP.WsMZhEDh91-kyhlI1UxrWwHaEK&pid=Api&P=0&w=268&h=152";
+  }
+  function out(x){
+      x.src="https://tse2.mm.bing.net/th?id=OIP.QQFZO_M6PszgbmK4griaFwAAAA&pid=Api&P=0&w=250&h=167";
+  }
+ //Chapter 43-48 Task 5
+ var clicks = 0;
+   function inc() {
+       
+       clicks += 1;
+     document.getElementById("counter").innerHTML = clicks;
+   
+ 
+       }
+
+   function dec() {
+       if (clicks>0){
+       clicks -= 1;
+       document.getElementById("counter").innerHTML = clicks;}
+       
+
+   }
+      
+        </script>
+          <h2 id="counter"></h2>
+        <button type="button" onclick="inc()">Increment</button>
+        <button type="button" id="dec" onclick="dec()">Decrement</button>
+
+        <h3>Chapter 49-52 Task 1</h3>
+
+<form name="form1">
+<p><b>Name:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
+</p>
+<p><b>Address:</b> <input TYPE="TEXT" SIZE="30" NAME="address">
+</p>
+<p><b>Phone: </b> <input TYPE="TEXT" SIZE="15" NAME="phone">
+</p>
+<p><input TYPE="BUTTON" VALUE="Display" onClick="display();"></p>
+</form>
+
+<div id="formData">
+
+</div>
+
+<h3>Chapter 49-52 Task 2</h3>
+<table>
+  <tr>
+    <td>id</td><td>Name</td><td>Age</td>
+  </tr>
+  <tr>
+    <td>01</td><td>Safi Saqlain</td><td>27</td><td><button id="details" onclick="viewMoreOrLess()">ReadMore</button></td>
+  </tr>
+</table>
+<table id="more">
+  <th>Contact Information</th>
+  <tr><td>Email</td><td>Phone</td></tr>
+  <tr><td>Safisaqlain@gmail.com</td><td>0333000333</td></tr>
+</table>
+<h3>Chapter 49-52 Task 3</h3>
+<form name="stdForm">
+  <p><b>Name:</b> <input TYPE="TEXT" id="name"  SIZE="20" NAME="yourname" required>
+  </p>
+  <p><b>Address:</b> <input TYPE="TEXT" id="address"SIZE="30" NAME="address">
+  </p>
+  <p><b>class: </b> <input TYPE="text" SIZE="15" id="class" NAME="class">
+  </p>
+  <p><button TYPE="button" VALUE="show" onclick="add()">Show</button></p>
+  </form>
+  <table  id="stdTable">
+
+  </table>
+
+  <form name="hiddenForm" id="hform"style="display: none">
+    <h3>HiddenForm</h3>
+    <p><b>Name:</b> <input TYPE="TEXT" id="hname"  SIZE="20" NAME="yourname" required>
+    </p>
+    <p><b>Address:</b> <input TYPE="TEXT" id="haddress"SIZE="30" NAME="address">
+    </p>
+    <p><b>class: </b> <input TYPE="text" SIZE="15" id="hclass" NAME="class">
+    </p>
+    </form>
+
+    <div>
+      <h1> DOM </h1>
+      <div id="form-content" class="content">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" />
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" />
+      <label for="email">Email</label>
+      <input type="text" id="email" />
+      </div>
+      <div id="main-content" class="content">
+      <p class="render"> First Name : Alex</p>
+      <p class="render" id="lastName">Last Name: Bank</p>
+      <p class="render"> Email : alexbank@example.com</p>
+      <p class="render"> Country : Pakistan </p>
+      <p class="render"> contact : +92 300 1234567</p>
+      </div>
+      </div>
+
+
+      <script>
+    //chapter 58-67 task1
+          //i
+          var mainId=document.getElementById("main-content");
+          //ii
+          console.log("children:",mainId.children);
+          //iii
+          var render=mainId.getElementsByClassName("render");
+   
+          for(var i=0;i<render.length;i++){
+      document.write(render[i].innerHTML)
+    
+        }
+        //iv
+        var input=document.getElementById("first-name");
+        input.value="safi";
+
+        //v
+        var linput=document.getElementById("last-name");
+        linput.value="saqlain";
+        var ginput=document.getElementById("email");
+        ginput.value="safisaqlain@gmail.com";
+         
+        //chapter 58-67 task2
+        //i
+
+     var formc=document.getElementById("form-content").nodeType;
+     document.write("<br>nodetype of id formcontent is"+formc);
+     
+     //ii
+     var lastName=document.getElementById("lastName");
+     document.write("lastname:"+lastName.nodeType);
+     document.write("<br>childnodes"+lastName.childNodes.length);
+     
+     
+     //iii
+     var textnode = document.createTextNode("Water");
+
+
+var item = document.getElementById("lastName").childNodes[0];
+
+
+lastName.replaceChild(textnode,item);
+
+
+//iv
+
+var lastChild= document.getElementById("main-content").lastElementChild.innerHTML;
+var firstChild= document.getElementById("main-content").firstElementChild.innerHTML;
+document.write("<br>first child:"+firstChild+"<br>last child:"+lastChild);
+
+//v
+var x = document.getElementById("lastName").previousElementSibling.nodeName;
+var y=document.getElementById("lastName").nextElementSibling.nodeName;
+      document.write("<br>previous sibling:"+x+"<br>next sibling:"+y);
+
+//vi
+      var emailparent = document.getElementById("email").parentNode.nodeName;
+      var emailtype=document.getElementById("email").nodeType;
+      document.write("<br>parent node of email is :"+emailparent+"<br> nodetype of email is :"+emailtype);
+</script>
+
+<div class="container" id="container"> 
+  
+  
+</div>
+
+<script>
+var array=["./images/1.jpg","./images/2.jpg","./images/3.jpg","./images/4.png"];
+var container=document.getElementById("container");
+for (var i=0;i<array.length;i++){
+   container.innerHTML+="<img  src="+array[i]+" height=200px width=200px onclick=onOpenImagModal(event) />"
+ container.style.display="flex";
+ container.style.justifyContent="space-around";
+
+ 
+ }
+ 
+
+
+function onOpenImagModal(event){
+
+  var modal=document.getElementById('modal');
+  modal.classList.add('modal-open');
+  modal.classList.remove('modal-close');
+  modal.style.display="block";
+  modalImg=document.getElementById('modal-img');
+modalImg.src=event.target.src;
+  console.log(event.target.src);
+ 
+
+}
+function onClosedImagModal(){
+  var modal=document.getElementById('modal');
+  modal.classList.add('modal-close');
+  modal.classList.remove('modal-open');
+  setTimeout(()=>{ modal.style.display = "none"; }, 550)
+  
+}
+
+
+
+</script>
+<div id="container"class="format">
+    
+</div>
+
+    <!-- Modal work -->
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script>
+      //task 53-58 task 2
+      var para=document.createElement('p');
+para.setAttribute('id','pa');
+var pg=document.getElementById("pa");
+var text=document.createTextNode("hello world how are you all doing?");
+para.appendChild(text);
+var body=document.getElementById("body");
+body.appendChild(para);
+var zoomIn=document.createElement('button');
+var zoomtext=document.createTextNode("ZoomIn");
+zoomIn.appendChild(zoomtext);
+body.appendChild(zoomIn);
+var zoomOut=document.createElement('button');
+var zoomTextOut=document.createTextNode("ZoomOut");
+zoomOut.appendChild(zoomTextOut);
+body.appendChild(zoomOut);
+zoomIn.onclick=function(){
+  document.getElementById("pa").style.fontSize="26px";
+  
+}
+zoomOut.onclick=function(){
+  document.getElementById("pa").style.fontSize="1rem";
+  
+}
+
+
+    </script>
+    
+</body>
+
+</html>
